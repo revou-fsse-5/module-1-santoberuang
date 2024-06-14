@@ -6,6 +6,7 @@ I am Santo.
 This is my project for Revou FFSE Bootcamp.
 
 <img src=./RevouAssignment/pic/picme.jpeg alt="mypic" width="300"></img>
+![santo](pic/picme.jpeg)
 
 ## About Project
 
@@ -18,7 +19,7 @@ This is my project for Revou FFSE Bootcamp.
 <li>Comment to the Cafe</li>
 <li>Contact and Location Information</li>
 
-### About Me
+### Contact Me
 
 <p>Of course you can contact me here: </p> 
 <p>email: nursanto@gmail.com</p>
