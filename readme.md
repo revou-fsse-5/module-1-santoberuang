@@ -1,11 +1,10 @@
 # Introduction
 
-<h1 style="color: green">Hello All</h1>
+<h1 style="color: green">Hello All!</h1>
 
 I am Santo.
 This is my project for Revou FFSE Bootcamp.
 
-<img src=./RevouAssignment/pic/picme.jpeg alt="mypic" width="300"></img>
 ![santo](pic/picme.jpeg)
 
 ## About Project
@@ -18,8 +17,9 @@ This is my project for Revou FFSE Bootcamp.
 <li>Seat Reservation</li>
 <li>Comment to the Cafe</li>
 <li>Contact and Location Information</li>
+<br>
 
-### Contact Me
+## Contact Me
 
 <p>Of course you can contact me here: </p> 
 <p>email: nursanto@gmail.com</p>
