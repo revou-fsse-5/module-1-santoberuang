@@ -5,7 +5,7 @@
 I am Santo.
 This is my project for Revou FFSE Bootcamp.
 
-![santo](pic/picme.jpeg)
+![santo](./pic/picme.jpeg)
 
 ## About Project
 
