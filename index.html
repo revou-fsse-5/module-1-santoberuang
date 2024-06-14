@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="Module 1 - First Assignment - RevoU FSSE Bootcamp - Berlin - Santo"
+    />
+    <meta
+      name="description"
+      content="First Assignment for FSSE Bootcamp - Module 1"
+    />
+    <meta name="keywords" content="HTML, CSS, JS" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js"></script>
+
+    <title>Welcome! 🍲</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navBar">
+        <ul id="barList">
+          <div id="barTarget">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+
+          <!-- <div id="barLogo">
+            <img src="./pic/lecuis4.png" alt="Logo Cafe" width="30px" />
+          </div> -->
+        </ul>
+      </nav>
+
+      <h1>Meeting Point Cafe</h1>
+    </header>
+    <div class="content">
+      <main>
+        <div class="imgCafe">
+          <img src="./pic/lecuis3.png" alt="Le Cuisine" />
+        </div>
+
+        <p id="headerText">Bienvenue à la grande experience culinaire</p>
+        <br />
+        <hr />
+        <br />
+        <div id="menuCafe">🔥Menu of the Cafe🔥</div>
+        <br />
+        <section id="menuList">
+          <div id="menuFood">
+            <p>
+              <center><b>Food Menu</b></center>
+            </p>
+            <ul type="a">
+              <li>Bubur Ayam Bandung</li>
+              <li>Soto Betawi</li>
+              <li>Rawon Surabaya</li>
+            </ul>
+          </div>
+
+          <div id="menuBeverage">
+            <p>
+              <center><b>Beverage Menu</b></center>
+            </p>
+            <ul type="square">
+              <li>Ice Tea (sweet)</li>
+              <li>Ice Coffe Aren</li>
+              <li>Ice Soda Milk</li>
+            </ul>
+          </div>
+          <br />
+        </section>
+
+        <section id="pictureFood">
+          <div class="picFood">
+            <img
+              src="./pic/buryam.jpeg"
+              alt="Bubur Ayam"
+              class="realPic"
+              id="buburAyam"
+            />
+
+            <img
+              src="./pic/sotbetawi.jpg"
+              alt="Soto Betawi"
+              class="realPic"
+              id="sotoBetawi"
+            />
+
+            <img
+              src="./pic/rawon.jpeg"
+              alt="Rawon Surabaya"
+              class="realPic"
+              id="rawonSurabaya"
+            />
+          </div>
+          <br />
+        </section>
+        <hr />
+        <section id="formRsvp">
+          <form action="" method="get">
+            <p><em>For Reservation, please fill below:</em></p>
+            <div id="formRsvp">
+              <input
+                type="text"
+                name="nameRsvp"
+                id="nameRsvp"
+                placeholder="yourname"
+                required
+              />
+              <input
+                type="tel"
+                name="telRsvp"
+                id="telRsvp"
+                placeholder="+62800000000"
+                required
+              />
+              <input
+                type="email"
+                name="emailRsvp"
+                id="emailRsvp"
+                placeholder="emailRsvp"
+              />
+            </div>
+
+            <div id="timeRsvp">
+              <p>Reservation Time</p>
+              <input
+                type="radio"
+                id="breakfast"
+                name="rsvpTime"
+                value="breakfast"
+              />
+              <label for="breakfast">Breakfast</label> <br />
+
+              <input type="radio" id="lunch" name="rsvpTime" value="lunch" />
+              <label for="lunch">Lunch</label> <br />
+
+              <input type="radio" id="dinner" name="rsvpTime" value="dinner" />
+              <label for="dinner">Dinner</label> <br />
+            </div>
+
+            <div id="roomRsvp">
+              <p>Room</p>
+              <select name="Room" id="optRoom">
+                <optgroup label="Front Area">
+                  <option value="uptofive">Up to 5 person</option>
+                  <option value="uptotwenty">Up to 20 person</option>
+                </optgroup>
+
+                <optgroup label="Back Area">
+                  <option value="uptofive">Up to 5 person</option>
+                  <option value="uptotwenty">Up to 20 person</option>
+                </optgroup>
+              </select>
+            </div>
+            <br />
+            <div id="addRsvp">
+              <input type="checkbox" name="private" id="privateRsvp" />
+              <label for="privateRsvp">Private Room</label>
+
+              <input type="checkbox" name="smoking" id="smokingRsvp" />
+              <label for="smokingRsvp">Smoking Room</label>
+            </div>
+            <br />
+            <div id="commentRsvp">
+              <label for="areaRsvp">Leave your comment here:</label> <br />
+              <textarea name="areaRsvp" id="areaRsvp"></textarea>
+            </div>
+            <br />
+            <button type="submit">Submit</button>
+            <button type="reset">Clear Form</button>
+          </form>
+        </section>
+      </main>
+
+      <hr />
+      <footer>
+        <div class="footerEnd">
+          <div class="contactUs">
+            <p>
+              <em> Contact Us:</em> <br />
+              <i>Point de Rencontre Cafe</i> <br />
+              +33953523298 <br />
+              678X Rue de Charenton, 75012 Paris, France
+            </p>
+          </div>
+
+          <div class="mapCafe">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7173.043187767119!2d2.360027744803102!3d48.84891356108701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67310349f6009%3A0x53bde53fb3dee0fb!2sRencontres%20-%20Restaurant%20%26%20Bar%20%C3%A0%20vins!5e0!3m2!1sen!2sid!4v1718174900790!5m2!1sen!2sid"
+              width="200"
+              height="180"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <br />
+        </div>
+
+        <section>
+          <div id="allRights">
+            <p>
+              Copyright &copy 2024 NengBeruangProject - RevoU FFSE Berlin. All
+              Rights Reserved.
+            </p>
+          </div>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
