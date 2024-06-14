@@ -5,7 +5,7 @@
 I am Santo.
 This is my project for Revou FFSE Bootcamp.
 
-<img src="./RevouAssignment/pic/picme.jpeg" alt="mypic" width="200" height="180">
+<img src=./RevouAssignment/pic/picme.jpeg alt="mypic" width="300"></img>
 
 ## About Project
 
