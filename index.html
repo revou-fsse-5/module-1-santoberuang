@@ -23,36 +23,54 @@
   </head>
 
   <body>
+    <!-- <div class="contentAll"> -->
     <header>
-      <nav class="navBar">
-        <ul id="barList">
-          <div id="barTarget">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </div>
+      <div class="headerTop">
+        <a href="#" class="mainLogo"> Point de Rencontre Cafe </a>
 
-          <!-- <div id="barLogo">
-            <img src="./pic/lecuis4.png" alt="Logo Cafe" width="30px" />
-          </div> -->
-        </ul>
-      </nav>
-
-      <h1>Meeting Point Cafe</h1>
+        <nav class="navBar">
+          <ul class="navMenu">
+            <li class="navItem">
+              <a href="#" class="navLink">Reservation</a>
+            </li>
+            <li class="navItem">
+              <a href="#" class="navLink">Menu</a>
+            </li>
+            <li class="navItem">
+              <a href="#" class="navLink">Home</a>
+            </li>
+            <div class="hamburgerButton" onclick="myFunction(this)">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <h1>Point de Rencontre Cafe</h1>
     </header>
-    <div class="content">
-      <main>
+
+    <div class="contentAll">
+      <main class="mainContent">
         <div class="imgCafe">
           <img src="./pic/lecuis3.png" alt="Le Cuisine" />
         </div>
+        <h2>Bienvenue à la grande experience culinaire</h2>
 
-        <p id="headerText">Bienvenue à la grande experience culinaire</p>
         <br />
         <hr />
         <br />
-        <div id="menuCafe">🔥Menu of the Cafe🔥</div>
+
+        <div class="marquee">
+          <p>
+            🎉👧 Wednesday Night is Ladies Day - Discount 30% All Drinks 👧🎉 |
+            | Friday Night All Drinks Discount 30% 🎉🎉🎉
+          </p>
+        </div>
         <br />
-        <section id="menuList">
+        <div id="menuCafe"><p class="menuCafe">🔥Menu of the Cafe🔥</p></div>
+        <br />
+        <section class="menuList">
           <div id="menuFood">
             <p>
               <center><b>Food Menu</b></center>
@@ -103,32 +121,36 @@
           <br />
         </section>
         <hr />
-        <section id="formRsvp">
+
+        <section class="form formRsvp" id="formRsvp">
           <form action="" method="get">
-            <p><em>For Reservation, please fill below:</em></p>
-            <div id="formRsvp">
-              <input
-                type="text"
-                name="nameRsvp"
-                id="nameRsvp"
-                placeholder="yourname"
-                required
-              />
-              <input
-                type="tel"
-                name="telRsvp"
-                id="telRsvp"
-                placeholder="+62800000000"
-                required
-              />
-              <input
-                type="email"
-                name="emailRsvp"
-                id="emailRsvp"
-                placeholder="emailRsvp"
-              />
+            <div class="formId">
+              <p><em>For Reservation, please fill below:</em></p>
+              <div id="formRsvp">
+                <input
+                  type="text"
+                  name="nameRsvp"
+                  id="nameRsvp"
+                  placeholder="yourname"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="telRsvp"
+                  id="telRsvp"
+                  placeholder="+62800000000"
+                  required
+                />
+                <input
+                  type="email"
+                  name="emailRsvp"
+                  id="emailRsvp"
+                  placeholder="emailRsvp"
+                />
+              </div>
             </div>
 
+            <div class="form formReserve"></div>
             <div id="timeRsvp">
               <p>Reservation Time</p>
               <input
@@ -146,36 +168,38 @@
               <label for="dinner">Dinner</label> <br />
             </div>
 
-            <div id="roomRsvp">
-              <p>Room</p>
-              <select name="Room" id="optRoom">
-                <optgroup label="Front Area">
-                  <option value="uptofive">Up to 5 person</option>
-                  <option value="uptotwenty">Up to 20 person</option>
-                </optgroup>
+            <div class="form formRoom">
+              <div id="roomRsvp">
+                <p>Room</p>
+                <select name="Room" id="optRoom">
+                  <optgroup label="Front Area">
+                    <option value="uptofive">Up to 5 person</option>
+                    <option value="uptotwenty">Up to 20 person</option>
+                  </optgroup>
 
-                <optgroup label="Back Area">
-                  <option value="uptofive">Up to 5 person</option>
-                  <option value="uptotwenty">Up to 20 person</option>
-                </optgroup>
-              </select>
-            </div>
-            <br />
-            <div id="addRsvp">
-              <input type="checkbox" name="private" id="privateRsvp" />
-              <label for="privateRsvp">Private Room</label>
+                  <optgroup label="Back Area">
+                    <option value="uptofive">Up to 5 person</option>
+                    <option value="uptotwenty">Up to 20 person</option>
+                  </optgroup>
+                </select>
+              </div>
+              <br />
+              <div id="addRsvp">
+                <input type="checkbox" name="private" id="privateRsvp" />
+                <label for="privateRsvp">Private Room</label>
 
-              <input type="checkbox" name="smoking" id="smokingRsvp" />
-              <label for="smokingRsvp">Smoking Room</label>
+                <input type="checkbox" name="smoking" id="smokingRsvp" />
+                <label for="smokingRsvp">Smoking Room</label>
+              </div>
+              <br />
+              <div id="commentRsvp">
+                <label for="areaRsvp">Leave your comment here:</label> <br />
+                <textarea name="areaRsvp" id="areaRsvp"></textarea>
+              </div>
+              <br />
+              <button type="submit">Submit</button>
+              <button type="reset">Clear Form</button>
             </div>
-            <br />
-            <div id="commentRsvp">
-              <label for="areaRsvp">Leave your comment here:</label> <br />
-              <textarea name="areaRsvp" id="areaRsvp"></textarea>
-            </div>
-            <br />
-            <button type="submit">Submit</button>
-            <button type="reset">Clear Form</button>
           </form>
         </section>
       </main>
